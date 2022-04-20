@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'docker_django.wsgi:application'
+WSGI_APPLICATION = 'docker_django.wsgi.application'
 
 
 # Database
