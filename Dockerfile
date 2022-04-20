@@ -13,7 +13,7 @@ WORKDIR /srv/docker-server
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-RUN gunicorn docker_django.wsgi:application -b 0:80
+CMD [ "gunicorn", "docker_django.wsgi:application", "-b", "0.0.0.0:8000" ]
 
 # EXPOSE 8000
 # CMD [ "python", "./docker_django/manage.py", "runserver", "0.0.0.0:8000"  ]
