@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def MainView(request):
-    return HttpResponse("Jenkins Auto Build!")
+    return HttpResponse("Jenkins Auto Build!!")
